@@ -4,6 +4,16 @@ import styled from "styled-components";
 
 export const Form = styled.form``;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+  width: 200px;
 
-export const Label = styled.label``;
+  :invalid {
+    background-color: pink;
+  }
+`;
+
+export const Label = styled.label`
+  display: block;
+  margin: 10px 0;
+  font-family: sans-serif;
+`;
