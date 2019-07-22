@@ -12,7 +12,7 @@ app.get("/ping", function(req, res) {
   return res.send("pong");
 });
 
-app.get("/sb/*", function(req, res) {
+app.get("/storybook*", function(req, res) {
   res.sendFile(path.join(__dirname, "storybook-static", "index.html"));
 });
 
