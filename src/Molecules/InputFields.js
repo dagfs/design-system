@@ -3,10 +3,10 @@ import React from "react";
 import styled from "styled-components";
 import { Label, Input } from "../Atoms/Input";
 
-export const InputField = ({ label, value, type }) => (
+export const InputField = ({ label, value, type, ...args }) => (
   <Label>
     <LabelWrapper>{label}</LabelWrapper>
-    <Input value={value} type={type} />
+    <Input {...args} value={value} type={type} />
   </Label>
 );
 

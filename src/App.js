@@ -1,26 +1,24 @@
 import React from "react";
 import Color from "./Atoms/Color";
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import styled from "styled-components";
 import { Img } from "./Atoms/Img";
-import { Form } from "./Atoms/Input";
-import { InputField } from "./Molecules/InputFields";
-import { H1 } from "./Atoms/Typografi";
+import Tram from "./Pages/Tram";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <Page>
-      <header>
-        <Img src={"/Tranch_logo.png"} />
-      </header>
-      <H1>Text</H1>
-      <Form>
-        <InputField label={"Name"} type={"text"} />
-        <InputField label={"Age"} type={"number"} />
-        <InputField label={"Phone"} type={"phone"} />
-        <InputField label={"Email"} type={"email"} />
-      </Form>
-    </Page>
+    <Router>
+      <Page>
+        <header>
+          <Img src={"/Tranch_logo.png"} />
+        </header>
+        <Route path="/" exact component={Home} />
+        <Route path="/tram" component={Tram} />
+      </Page>
+    </Router>
   );
 }
 

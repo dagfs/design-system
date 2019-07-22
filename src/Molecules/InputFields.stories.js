@@ -1,12 +1,30 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 import { InputField } from "./InputFields";
+import {
+  array,
+  withKnobs,
+  optionsKnob as options
+} from "@storybook/addon-knobs";
+// https://www.npmjs.com/package/@storybook/addon-knobs
 
-storiesOf("Moleclues/Input", module).addWithJSX(
+const stories = storiesOf("Moleclues/Input", module);
+
+stories.addDecorator(withKnobs);
+
+stories.addWithJSX(
   "InputField",
-  () => <InputField label={"Input"} />,
+  () => {
+    const label = "Type";
+    const defaultValue = ["text"];
+    const values = ["text", "number", "email"];
+    const optionsObj = {
+      display: "inline-radio"
+    };
+    const value = options(label, values, values[0], optionsObj);
+    return <InputField type={value} label={"Input"} />;
+  },
   {
     notes: { markdown: "Markdown" }
   }

@@ -10,6 +10,10 @@ export const Input = styled.input`
   :invalid {
     background-color: pink;
   }
+
+  :focus {
+    background-color: white;
+  }
 `;
 
 export const Label = styled.label`
