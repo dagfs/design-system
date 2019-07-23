@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Form } from "../Atoms/Input";
+import { Form } from "../System/Elements/Input";
 import { InputField } from "../Molecules/InputFields";
-import { H1 } from "../Atoms/Typografi";
+import { H1 } from "../System/Typografi/Typografi";
 
 export default () => (
   <div>

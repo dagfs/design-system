@@ -3,10 +3,10 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
-import { Form, Input } from "./Input";
+import { Form, Input } from "../Elements/Input";
 import { H1, H2, H3, H4, P } from "./Typografi";
 
-storiesOf("Atoms", module).addWithJSX(
+storiesOf("System", module).addWithJSX(
   "Typografi",
   () => (
     <div>

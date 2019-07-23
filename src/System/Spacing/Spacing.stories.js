@@ -2,7 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
-storiesOf("Atoms", module).add("Spacing", () => (
+storiesOf("System", module).add("Spacing", () => (
   <div>
     <h1>
       Spacing plays an important role in design. Having a clear understanding of

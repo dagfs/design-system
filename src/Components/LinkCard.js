@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Img } from "../Atoms/Img";
+import { Img } from "../System/Elements/Img";
 
 const LinkCardContainer = styled(Link)`
   display: block;

@@ -1,10 +1,10 @@
 import React from "react";
-import Color from "./Atoms/Color";
+import Color from "./System/Color/Color";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import styled from "styled-components";
-import { Img } from "./Atoms/Img";
+import { Img } from "./System/Elements/Img";
 import Tram from "./Pages/Tram";
 import Home from "./Pages/Home";
 

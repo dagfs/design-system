@@ -14,7 +14,7 @@ const ColorWrapper = styled.div`
   background-color: ${props => props.color};
 `;
 
-storiesOf("Atoms", module).add(
+storiesOf("System", module).add(
   "Color",
   () => (
     <div>
