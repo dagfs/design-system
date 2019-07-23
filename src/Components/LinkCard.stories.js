@@ -6,7 +6,7 @@ import LinkCard from "./LinkCard";
 import { H2, P } from "../System/Typografi/Typografi";
 // https://www.npmjs.com/package/@storybook/addon-knobs
 
-const stories = storiesOf("Components/InputField", module);
+const stories = storiesOf("Components", module);
 
 stories.addWithJSX(
   "LinkCard",

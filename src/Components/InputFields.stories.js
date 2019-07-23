@@ -5,7 +5,7 @@ import { InputField } from "./InputFields";
 import { withKnobs, optionsKnob as options } from "@storybook/addon-knobs";
 // https://www.npmjs.com/package/@storybook/addon-knobs
 
-const stories = storiesOf("Components/InputField", module);
+const stories = storiesOf("Components", module);
 
 stories.addDecorator(withKnobs);
 
@@ -24,3 +24,5 @@ stories.addWithJSX(
     notes: { markdown: "Markdown" }
   }
 );
+
+// https://storybook.js.org/docs/basics/writing-stories/
