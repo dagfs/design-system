@@ -1,6 +1,6 @@
 import React from "react";
-import LinkCard from "../Molecules/LinkCard";
-import { H2, P } from "../Atoms/Typografi";
+import LinkCard from "../Components/LinkCard";
+import { H2, P } from "../System/Typografi/Typografi";
 
 export default () => (
   <div>

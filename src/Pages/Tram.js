@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Form } from "../System/Elements/Input";
-import { InputField } from "../Molecules/InputFields";
+import { InputField } from "../Components/InputFields";
 import { H1 } from "../System/Typografi/Typografi";
 
 export default () => (
